@@ -11,7 +11,7 @@ body {
 
 nav {
     background-color: rgba(59, 191, 212,0.7);
-    background-image: url("bg1.png");
+    background-image: url("bg1.PNG");
     background-repeat:no-repeat;
     background-size:cover;
     padding: 20px;
@@ -179,7 +179,6 @@ nav li:hover {
     margin: 0 auto 40px auto;
     float: left;
     margin-bottom: 20px;
-    margin-left: 20px;
     margin-right: 20px;
     object-fit: cover;
 }
