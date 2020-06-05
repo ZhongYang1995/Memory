@@ -59,8 +59,13 @@ h1 {
     text-align: center;
 }
 
-img {
+img,video{
     width:100%;
+}
+
+.topic {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .intro {
