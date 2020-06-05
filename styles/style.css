@@ -50,7 +50,7 @@ img {
 }
 
 .intro {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .chapters {
@@ -156,14 +156,13 @@ nav li:hover {
         background-color: lightblue;
     }*/
 
-    .map {
-        float:left;
-        width:50%;
-        margin-right: 20px;
+    .video1 {
+        float: left;
+        margin: 0 auto 40px auto;
         margin-bottom: 20px;
-        height:60vh;
-        max-height:500px;
-        object-fit:cover;
+        margin-left: 20px;
+        margin-right: 20px;
+        object-fit: cover;
     }
     .locations {
         clear:both;
@@ -175,22 +174,24 @@ nav li:hover {
     
 }
 
+.video1 {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+
 .locations {
     clear: both;
 }
 
-.map {
-    float: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
+.hands {
     border-radius: 50%;
-    height: 60vh;
-    width: 250px;
-    height: 250px;
-    max-height: 500px;
     object-fit: cover;
-    shape-outside: circle();
-    
 }
 
 h2 {
