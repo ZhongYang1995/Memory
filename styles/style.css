@@ -1,0 +1,198 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+body {
+    margin: 0;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(59, 191, 212,0.7);
+    background-image: url("bg1.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type:none;
+}
+
+    nav li {
+        padding: 10px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        
+    }
+
+nav a {
+    color:white;
+    text-decoration:none;
+    font-weight:800
+}
+
+main {
+    padding:20px;
+}
+
+h1 {
+    
+    font-family: 'Ma Shan Zheng', cursive;
+    margin: 20px,0;
+    text-align: center;
+}
+
+img {
+    width:100%;
+}
+
+.intro {
+    margin: 20px 0;
+}
+
+.chapters {
+    margin: 20px 0;
+}
+
+.locations div {
+    border:1px solid grey;
+    padding:20px;
+    margin-bottom:40px;
+}
+
+.chapters div {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*div img {
+    height:300px;
+    object-fit:cover;
+}*/
+
+h2 {
+    background-color: rgba(59, 191, 212,0.7);
+    padding: 10px;
+    margin:20px,0px;
+    color: white;
+    text-align:center;
+}
+
+div ul {
+    margin-left: 20px;
+}
+
+div li {
+    margin-top: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h3 {
+    background-color: rgba(59, 191, 212,0.7);
+    padding: 10px;
+    margin: 10px,0px;
+    color: white;
+    text-align: center;
+}
+
+.locations ul {
+    list-style-type:square;
+}
+
+.locations ul a {
+    color: blue;
+    text-decoration: none;
+}
+
+.locations a {
+    color: black;
+    text-decoration: none;
+    font-weight:600;
+}
+
+/*New CSS*/
+.locations div, .chapters div {
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+nav li:hover {
+    background-color: lightpink;
+}
+
+@media only screen and (min-width: 600px) {
+    /*body {
+        background-color: lightblue;
+    }*/
+
+    nav li {
+        display:inline-block;
+        margin: 0px 0px;
+        padding:20px;
+    }
+
+    nav {
+        padding:0 20px;
+        position: fixed;
+        width:100%;
+        z-index:1;
+    }
+    main {
+        padding-top:80px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /*body {
+        background-color: lightblue;
+    }*/
+
+    .map {
+        float:left;
+        width:50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height:60vh;
+        max-height:500px;
+        object-fit:cover;
+    }
+    .locations {
+        clear:both;
+    }
+    .locations {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+.locations {
+    clear: both;
+}
+
+.map {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    height: 60vh;
+    width: 250px;
+    height: 250px;
+    max-height: 500px;
+    object-fit: cover;
+    shape-outside: circle();
+    
+}
+
+h2 {
+    border-radius:0px;
+}
