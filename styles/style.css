@@ -12,21 +12,15 @@ body {
 nav {
     background-color: rgba(59, 191, 212,0.7);
     background-image: url("bg1.PNG");
-    background-repeat:no-repeat;
-    background-size:cover;
-    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 nav ul {
     list-style-type:none;
 }
 
-    nav li {
-        padding: 10px 20px;
-        margin-left: -20px;
-        margin-right: -20px;
-        
-    }
 
 nav a {
     color:white;
@@ -34,8 +28,28 @@ nav a {
     font-weight:800
 }
 
+    nav li {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+nav {
+    padding: 0px 20px;
+
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
 main {
-    padding:20px;
+    padding-top: 70px;
+}
+
+.locations {
+    clear: both;
 }
 
 h1 {
@@ -223,8 +237,8 @@ h3 {
 
         .topnav.responsive li.icon {
             position: absolute;
-            right: 0;
-            top: 20px;
+            right: 20px;
+            top: 0px;
         }
 
         .topnav.responsive li {
