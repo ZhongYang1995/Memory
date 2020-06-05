@@ -9,22 +9,30 @@
     <meta name="keywords" content="Photos, text" />
     <title> 景点打卡 </title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <ul>
             <li> <a href="index.html"> 东北记忆 </a> </li>
-            <li> <a href="index.html#changchun"> 长春-长白山 </a> </li>
-            <li> <a href="index.html#harbin"> 哈尔滨 </a> </li>
+            <li> <a href="harbin2.html" class="active"> 哈尔滨 </a> </li>
+            <li> <a href="changchun.html"> 长春 </a> </li>
+            <li> <a href="changbaishan.html"> 长白山 </a> </li>
+            <li> <a href="harbin1.html"> 美食 </a> </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
-        <h1> 景点打卡 </h1>
+        <h1> 哈尔滨，晴 </h1>
         <div class="chapters">
             <div>
                 <h3> <span>大教堂</span> </h3>
                 <p>
-                    这一天被人夸好看了，开心<br />
+                    被人夸好看了，开心<br />
                     <img src="assets/beauty2.JPG" alt="beauty" /> <br />
                     站那么远干嘛<br />
                     <img src="assets/church.jpg" alt="church" /> <br />
@@ -32,12 +40,10 @@
                     <img src="assets/dabaitui.jpg" alt="beauty" /> <br />
                 </p>
             </div>
-        </div>
-        <div class="chapters">
             <div>
                 <h3> <span>太阳岛</span> </h3>
                 <p>
-                    在这么大的岛上玩耍，有一台这样的小车车很重要<br />
+                    在这么大的岛上，有一台这样的小车车很重要<br />
                     <img src="assets/smallcar.JPG" alt="small car" /> <br />
                     鹿儿，我美吗？<br />
                     <img src="assets/taiyangdao.jpg" alt="deer" /> <br />
@@ -47,16 +53,25 @@
                     <img src="assets/beauty.jpg" alt="beauty" /> <br />
                 </p>
             </div>
-        </div>
-        <div class="chapters">
             <div>
                 <h3> <span>虎园</span> </h3>
                 <p>
-                    不吃素的东北虎<br />
+                    东北虎，不吃素<br />
                     <img src="assets/tiger.jpg" alt="tiger" /> <br />
                 </p>
             </div>
         </div>
-     </main>
+    </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>

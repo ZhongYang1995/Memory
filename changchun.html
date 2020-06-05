@@ -9,13 +9,21 @@
     <meta name="keywords" content="Photos, text" />
     <title> 长春 </title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <ul>
-            <li> <a href="index.html"> 东北记忆 </a> </li>
-            <li> <a href="index.html#changchun"> 长春-长白山 </a> </li>
-            <li> <a href="index.html#harbin"> 哈尔滨 </a> </li>
+            <li> <a href="index.html" > 东北记忆 </a> </li>
+            <li> <a href="harbin2.html"> 哈尔滨 </a> </li>
+            <li> <a href="changchun.html" class="active"> 长春 </a> </li>
+            <li> <a href="changbaishan.html"> 长白山 </a> </li>
+            <li> <a href="harbin1.html"> 美食 </a> </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -28,16 +36,25 @@
                     <img src="assets/arrive.jpg" alt="arrival" /> <br />
                 </p>
             </div>
-        </div>
-        <div class="chapters">
             <div>
                 <h3> <span>博物院的大发现</span> </h3>
                 <p>
-                    好大一只熊<br />
+                    好大的熊<br />
                     <img src="assets/musium.JPG" alt="musium" /> <br />
                 </p>
             </div>
         </div>
     </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>

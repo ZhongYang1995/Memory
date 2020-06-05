@@ -9,25 +9,38 @@
     <meta name="keywords" content="Photos, text" />
     <title> 吃吃喝喝 </title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <ul>
             <li> <a href="index.html"> 东北记忆 </a> </li>
-            <li> <a href="index.html#changchun"> 长春-长白山 </a> </li>
-            <li> <a href="index.html#harbin"> 哈尔滨 </a> </li>
+            <li> <a href="harbin2.html"> 哈尔滨 </a> </li>
+            <li> <a href="changchun.html"> 长春 </a> </li>
+            <li> <a href="changbaishan.html"> 长白山 </a> </li>
+            <li> <a href="harbin1.html" class="active"> 美食 </a> </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
         <h1> 吃吃喝喝 </h1>
         <div class="chapters">
             <div>
-                <h3> <span>一小部分照片</span> </h3>
+                <h3> <span>马迭尔餐厅</span> </h3>
                 <p>
-                    不好吃的鱼子酱<br />
+                    鱼子酱<br />
                     <img src="assets/chi2.JPG" alt="food" /> <br />
                     红汤 <br />
                     <img src="assets/chi.JPG" alt="food" /> <br />
+                </p>
+            </div>
+            <div>
+                <h3> <span>街边小吃</span> </h3>
+                <p>
                     芒果冰<br />
                     <img src="assets/chi3.JPG" alt="food" /> <br />
                     炸鸡<br />
@@ -37,7 +50,18 @@
                 </p>
             </div>
         </div>
-        
-     </main>
+
+    </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>

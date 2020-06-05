@@ -9,52 +9,71 @@
     <meta name="keywords" content="Photos, text" />
     <title> 东北记忆 </title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    <body>
-        <nav>
-            <ul>
-                <li> <a href="index.html"> 东北记忆 </a> </li>
-                <li> <a href="index.html#changchun"> 长春-长白山 </a> </li>
-                <li> <a href="index.html#harbin"> 哈尔滨 </a> </li>
-            </ul>
-        </nav>
-        <main>
-            <h1> 东北记忆 </h1>
-            <div class="intro">
-                <div>
-                    <video  class="video1" width="400" height="300" controls>
-                        <source src="assets/video.mp4" type="video/mp4">
-                    </video>
-                    <p>2017年夏天，我们大学毕业。在广袤的东北大地上，留下了一段咱俩的美好回忆。从黄花机场起飞，我们最先抵达长春，在当地报了长白山旅行团，出发前我们游遍了市区内的主要景点。在长白山上，我们有幸将天池美景尽收眼底，许下了美好的愿望。愉快地返回长春，我们乘坐高铁前往哈尔滨，路途不远差价不多，于是咱俩第一次买了两张一等座。在哈尔滨，我们买了红肠，吃了马迭尔饭店以及门口的冰棍。第二天，在太阳岛上开小车车，在虎园投喂东北虎......</p>
-                 </div>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <li> <a href="index.html" class="active"> 东北记忆 </a> </li>
+            <li> <a href="harbin2.html"> 哈尔滨 </a> </li>
+            <li> <a href="changchun.html"> 长春 </a> </li>
+            <li> <a href="changbaishan.html"> 长白山 </a> </li>
+            <li> <a href="harbin1.html"> 美食 </a> </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1> 东北记忆 </h1>
+        <div class="intro">
+            <div>
+                <video class="video1" width="400" height="300" controls>
+                    <source src="assets/video.mp4" type="video/mp4">
+                </video>
+                <p>2017年夏天，咱俩大学毕业。在广袤的东北大地上，留下了一段美好回忆。从黄花机场起飞，首先抵达长春，报了个长白山旅行团，出发前咱俩游遍了市区内的景点。在长白山上，有幸将天池美景尽收眼底，许下了美好的愿望。愉快地返回长春，咱俩乘坐高铁前往哈尔滨，路途不远差价不多，于是第一次体验了一等座。在哈尔滨，咱俩买了红肠，吃了马迭尔饭店以及门口的冰棍。第二天，在太阳岛驾驶电瓶车，在虎林园投喂东北虎......</p>
             </div>
-            <div class="locations">
-                <div>
-                    <h2 id="changchun">长春-长白山</h2>
-                    <a href="changbaishan.html"> <img src="assets/tianchi2.jpg" alt="天池" /> </a>
-                    <p>
-                        在长春，我们参观了<a href="https://baike.baidu.com/item/伪满皇宫博物院/2151196" target="_blank">伪满皇宫博物院</a>, 在吉大门口吃了东北大排骨。
-                        第二天我们跟团前往<a href="https://baike.baidu.com/item/长白山景区/12001811" target="_blank">长白山</a>，遍览沿途好风光，夜宿温泉大酒店。清晨登长白，山水比天高，终生难忘！
-                    </p>
-                    <ul>
-                        <li> <a href="changchun.html"> 抵达长春</a> </li>
-                        <li> <a href="changbaishan.html"> 情定天池 </a> </li>
-                    </ul>
-                </div>
+        </div>
+        <div class="locations">
+            <div>
+                <h2 id="changchun">长春-长白山</h2>
+                <a href="changbaishan.html"> <img src="assets/tianchi2.jpg" alt="天池" /> </a>
+                <p>
+                    在长春，我们参观了<a href="https://baike.baidu.com/item/伪满皇宫博物院/2151196" target="_blank">伪满皇宫博物院</a>, 在吉大门口吃了东北大排骨。
+                    第二天我们跟团前往<a href="https://baike.baidu.com/item/长白山景区/12001811" target="_blank">长白山</a>，遍览沿途好风光，夜宿温泉大酒店。清晨登长白，山水比天高，终生难忘！
+                </p>
+                <ul>
+                    <li> <a href="changchun.html"> 抵达长春</a> </li>
+                    <li> <a href="changbaishan.html"> 情定天池 </a> </li>
+                </ul>
+            </div>
 
-                <div>
-                    <h2 id="harbin">哈尔滨</h2>
-                    <a href="harbin2.html"> <img src="assets/church.jpg" alt="harbin" /> </a>
-                        <p>
-                            <span> 哈尔滨</span> ，北纬45°。
-                            在这里，我们游览<a href="https://baike.baidu.com/item/哈尔滨圣索非亚大教堂/950447" target="_blank">圣索菲亚大教堂</a>，闲逛<a href="https://baike.baidu.com/item/中央大街/14811" target="_blank">中央大街</a>，嬉戏于<a href="https://baike.baidu.com/item/太阳岛/1845" target="_blank">太阳岛</a>和<a href="https://baike.baidu.com/item/东北虎林园/163292" target="_blank">东北虎园</a>：
-                        </p>
-                        <ul>
-                            <li> <a href="harbin1.html"> 吃吃喝喝 </a> </li>
-                            <li> <a href="harbin2.html"> 景点打卡 </a> </li>
-                        </ul>
-</div>
+            <div>
+                <h2 id="harbin">哈尔滨</h2>
+                <a href="harbin2.html"> <img src="assets/church.jpg" alt="harbin" /> </a>
+                <p>
+                    <span> 哈尔滨</span> ，北纬45°。
+                    在这里，我们游览<a href="https://baike.baidu.com/item/哈尔滨圣索非亚大教堂/950447" target="_blank">圣索菲亚大教堂</a>，闲逛<a href="https://baike.baidu.com/item/中央大街/14811" target="_blank">中央大街</a>，嬉戏于<a href="https://baike.baidu.com/item/太阳岛/1845" target="_blank">太阳岛</a>和<a href="https://baike.baidu.com/item/东北虎林园/163292" target="_blank">东北虎园</a>：
+                </p>
+                <ul>
+                    <li> <a href="harbin1.html"> 吃吃喝喝 </a> </li>
+                    <li> <a href="harbin2.html"> 景点打卡 </a> </li>
+                </ul>
             </div>
-</main>
-    </body>
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
 </html>
